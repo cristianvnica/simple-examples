@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTML Page example</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    pre {
+      background-color: #262626;
+      border: 1px solid #999;
+      color: #4ac73b;
+      font-size: 1em;
+      display: block;
+      padding: 1vw 3vw;
+    }
+    .page {
+      background-color: rgb(248, 150, 30);
+      border: 2px solid black;
+      display: grid;
+      grid-template-areas:
+        "header aside"
+        "main  aside"
+        "footer  aside";
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+    }
+    .page > header {
+      grid-area: header;
+      background-color: bisque;
+    }
+    .page > main {
+      grid-area: main;
+      background-color: #ffc37f;
+    }
+    .page > aside {
+      grid-area: aside;
+      background-color: #fcfff0;
+      padding: 0;
+      width: initial;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    .page > footer {
+      grid-area: footer;
+      background-color: #bfdf52;
+    }
+    .page * {
+      margin: 0.5em;
+      text-align: left;
+      color: black;
+    }
+
+    @media only screen and (min-width: 400px) {
+      pre {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+<script src=""></script>
+
+<body>
+  <header>
+    <a href="/">Simple Examples</a>
+    <h1>HTML Page example</h1>
+  </header>
+  <main>
+    <p>HTML page structure</p>
+
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page title&lt;/title&gt;
+  &lt;/head&gt;
+    
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;page title&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;p&gt;main content&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;aside&gt;
+      &lt;p&gt;side content&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+      &lt;p&gt;footer&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt; 
+</code>
+</pre>
+</br>
+    <p>Resulting HTML page with CSS styiling.</p>
+</br>
+    <section class="page">
+      <header>page title</header>
+      <main>main content</main>
+      <aside>side content</aside>
+      <footer>footer</footer>
+    </section>
+</br>
+      <p>To see the CSS rules applied to style the above example, right-click on the desired HTML element, than choose Inspect.</p>
+  </main>
+  <aside>
+    <p>ads placeholder</p>
+  </aside>
+  <footer>
+    <a href="/"><span class="copyright-symbol">©</span> simple-examples.com</p>
+  </footer>
+</body>
+
+</html>
