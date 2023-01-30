@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Index.html example</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    pre {
+      background-color: #fcfff096;
+      border: 2px solid #999;
+      color: #053450;
+      font-size: 1em;
+      font-weight: bold;
+      display: block;
+      padding: 1vw 3vw;
+    }
+    .page * {
+      margin: 0.5em;
+      color: black;
+    }
+    .page {
+      background-color: #cfddcf;
+      border: 2px solid #4f6800;
+      display: grid;
+      grid-template-areas:
+        "navigation header"
+        "navigation main"
+        "navigation footer";
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr;
+    }
+    .page > header {
+      grid-area: header;
+      background-color: #eeffc47a;
+      text-align: center;
+    }
+    .page > nav {
+      grid-area: navigation;
+      background-color: #f8fff0;
+      padding: 0;
+      width: initial;
+      text-align: left;
+    }
+    .page > nav > a {
+      display: block;
+    }
+    .page > main {
+      grid-area: main;
+      background-color: #fbf9c7c7;
+      text-align: center;
+    }
+    .page > footer {
+      grid-area: footer;
+      background-color: #a0c1c38c;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 400px) {
+      pre {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+<script src=""></script>
+
+<body>
+  <header>
+    <a href="/">Simple Examples</a>
+    <h1>Index.html example</h1>
+  </header>
+  <main>
+    <p>Index.html code structure</p>
+
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page title&lt;/title&gt;
+  &lt;/head&gt;
+    
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+      &lt;p&gt;Navigation&lt;/p&gt;
+      &lt;a href=&quot;#&quot;&gt;Page 1&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;Page 2&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+      &lt;p&gt;Content&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+      &lt;p&gt;Footer&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt; 
+</code>
+</pre>
+</br>
+    <p>Resulting Index page - with CSS styiling applied.</p>
+</br>
+    <section class="page">
+      <header>Title</header>
+      <nav>
+        <p>Navigation</p>
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+      </nav>
+      <main>Content</main>
+      <footer>Footer</footer>
+    </section>
+</br>
+      <p>To see the CSS applied, right-click on the desired HTML element, than choose Inspect.</p>
+  </main>
+  <aside>
+    <p>ads placeholder</p>
+  </aside>
+  <footer>
+    <a href="/"><span class="copyright-symbol">©</span> simple-examples.com</p>
+  </footer>
+</body>
+
+</html>
