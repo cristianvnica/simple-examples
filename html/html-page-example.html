@@ -6,15 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="../style.css">
   <style>
-    pre {
-      background-color: #262626;
-      border: 1px solid #999;
-      color: #4ac73b;
-      font-size: 1em;
-      display: block;
-      padding: 1vw 3vw;
-    }
     .page {
+      margin-top: 1rem;
       background-color: rgb(248, 150, 30);
       border: 2px solid black;
       display: grid;
@@ -65,14 +58,13 @@
 
 <body>
   <header>
-    <a href="/">Simple Examples</a>
+    <a href="/">Home</a>
     <h1>HTML Page example</h1>
   </header>
   <main>
     <p>HTML page structure</p>
 
-    <pre><code>
-&lt;!DOCTYPE html&gt;
+    <pre><code class="code-block">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;title&gt;Page title&lt;/title&gt;
@@ -92,12 +84,10 @@
       &lt;p&gt;footer&lt;/p&gt;
     &lt;/footer&gt;
   &lt;/body&gt;
-&lt;/html&gt; 
-</code>
-</pre>
-</br>
-    <p>Resulting HTML page with CSS styiling.</p>
-</br>
+&lt;/html&gt;</code></pre>
+ 
+<p>Resulting HTML page with CSS styiling.</p>
+
     <section class="page">
       <header>page title</header>
       <main>main content</main>
@@ -111,7 +101,13 @@
     <p>ads placeholder</p>
   </aside>
   <footer>
-    <a href="/"><span class="copyright-symbol">©</span> simple-examples.com</p>
+    <nav>
+      <ul class="breadcrumbs">
+        <li><a href="/">Simple Examples</a></li>
+        <li><a href="/html">HTML</a></li>
+      </ul>
+    </nav>
+    <p><span class="copyright-symbol">©</span> simple-examples.com</p>
   </footer>
 </body>
 

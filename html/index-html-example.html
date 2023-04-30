@@ -6,15 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="../style.css">
   <style>
-    pre {
-      background-color: #fcfff096;
-      border: 2px solid #999;
-      color: #053450;
-      font-size: 1em;
-      font-weight: bold;
-      display: block;
-      padding: 1vw 3vw;
-    }
     .page * {
       margin: 0.5em;
       color: black;
@@ -64,18 +55,20 @@
   </style>
 </head>
 
-<script src=""></script>
-
 <body>
   <header>
-    <a href="/">Simple Examples</a>
+    <nav>
+      <ul class="breadcrumbs">
+        <li><a href="/">Simple Examples</a></li>
+        <li><a href="/html">HTML</a></li>
+      </ul>
+    </nav>
     <h1>Index.html example</h1>
   </header>
   <main>
     <p>Index.html code structure</p>
 
-    <pre><code>
-&lt;!DOCTYPE html&gt;
+    <pre><code class="code-block">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;title&gt;Page title&lt;/title&gt;
@@ -97,12 +90,10 @@
       &lt;p&gt;Footer&lt;/p&gt;
     &lt;/footer&gt;
   &lt;/body&gt;
-&lt;/html&gt; 
-</code>
-</pre>
-</br>
-    <p>Resulting Index page - with CSS styiling applied.</p>
-</br>
+&lt;/html&gt;</code></pre>
+
+    <p>Resulting Index page (with CSS styiling).</p>
+
     <section class="page">
       <header>Title</header>
       <nav>
@@ -116,12 +107,21 @@
 </br>
       <p>To see the CSS applied, right-click on the desired HTML element, than choose Inspect.</p>
   </main>
+
   <aside>
     <p>ads placeholder</p>
   </aside>
   <footer>
-    <a href="/"><span class="copyright-symbol">©</span> simple-examples.com</p>
+    <nav>
+      <ul class="breadcrumbs">
+        <li><a href="/">Simple Examples</a></li>
+        <li><a href="/html">HTML</a></li>
+      </ul>
+    </nav>
+    <p><span class="copyright-symbol">©</span> simple-examples.com</p>
   </footer>
+
+  <script src=""></script>
 </body>
 
 </html>
