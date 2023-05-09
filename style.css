@@ -27,6 +27,15 @@ main {
   border-radius: 0.1rem;
 }
 
+main a {
+  text-decoration: none;
+  color: #4a434394;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
 p, li {
   font-size: large;
   padding: 0.5em 0.1em;
@@ -78,6 +87,8 @@ footer p {
   font-size: small;
 }
 
+/* Breadcrumbs */
+
 .breadcrumbs {
   list-style-type: none;
   display: flex;
@@ -107,6 +118,12 @@ footer p {
 }
 
 /* Media queries for responsive design */
+@media only screen and (min-width: 400px) {
+  pre {
+    font-size: 1.2em;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   body {
     margin: 0 auto;
