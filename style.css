@@ -42,6 +42,7 @@ p, li {
 }
 
 pre {
+  font-family: 'Consolas', 'Courier New', monospace;
   background-color: #383333;
   color: #64ed68d1;
   border: 1px solid #ccc;
@@ -88,7 +89,6 @@ footer p {
 }
 
 /* Breadcrumbs */
-
 .breadcrumbs {
   list-style-type: none;
   display: flex;
@@ -118,12 +118,6 @@ footer p {
 }
 
 /* Media queries for responsive design */
-@media only screen and (min-width: 400px) {
-  pre {
-    font-size: 1.2em;
-  }
-}
-
 @media only screen and (min-width: 700px) {
   body {
     margin: 0 auto;
@@ -133,6 +127,10 @@ footer p {
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-columns: 33% 33% 34%;
+  }
+
+  pre {
+    font-size: 1.05rem;
   }
 
   header, main, footer {
