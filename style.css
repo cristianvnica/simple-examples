@@ -13,7 +13,7 @@ body {
 }
 
 header, main, aside, footer {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 header h1 {
@@ -143,8 +143,8 @@ footer p {
     font-size: 1.05rem;
   }
 
-  header, main, footer {
-    padding: 2em;
+  header, main, aside, footer {
+    padding: 3rem;
   }
 
   header {
