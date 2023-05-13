@@ -10,9 +10,15 @@
   <!-- Header -->
   <header>
     <nav>
-      <ul class="breadcrumbs">
-        <li><a href="/">Simple Examples</a></li>
-        <li><a href="/git">GIT</a></li>
+      <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Simple Examples</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/git"><span itemprop="name">GIT</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
       </ul>
     </nav>
     <h1>Cleaning Git Untracked Files Example</h1>

@@ -53,9 +53,15 @@
 <body>
   <header>
     <nav>
-      <ul class="breadcrumbs">
-        <li><a href="/">Simple Examples</a></li>
-        <li><a href="/html">HTML</a></li>
+      <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Simple Examples</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/html"><span itemprop="name">HTML</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
       </ul>
     </nav>
     <h1>HTML Page example</h1>
