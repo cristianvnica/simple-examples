@@ -39,34 +39,41 @@
     </header>
 
     <main itemscope itemtype="https://schema.org/HowTo">
-        <p>Here is a simple 'git cherry-pick' example</p>
-        <pre><code itemprop="duringMedia" class="code-block">git cherry-pick e1537be</code></pre>
-        <p><strong itemprop="name">'git cherry-pick'</strong> command in Git allows you to select and apply a specific commit from one branch to another.</p>
-      
-        <h3>Cherry Pick Steps</h3>
-      
-        <ol>
-          <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-            <span itemprop="name">Ensure you're on the branch where you want to apply the cherry-picked commit (master in this case).</span>
-            You can switch branches using the command: <code itemprop="text">git checkout master</code>.
-          </li>
-          <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-            <span itemprop="name">Identify the commit to cherry-pick.</span>
-            You can find the commit hash using <code itemprop="text">git log</code> or any Git visualization tool.
-          </li>
-          <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-            <span itemprop="name">Cherry pick the commit.</span>
-            Execute the cherry-pick command with the commit hash: <code itemprop="text">git cherry-pick &lt;commit-hash&gt;</code>.
-          </li>
-          <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-            <span itemprop="name">Finalize the cherry pick.</span>
-            Once the cherry-pick is completed, the selected changes from the feature branch will be successfully applied to the master branch.
-          </li>
-        </ol>
-      
-        <p>It's important to note that cherry-picking a commit creates a new commit in the target branch, so the commit hash and message will be different from the original commit in the source branch.</p>
-      </main>
-      
+      <p>Here is a simple 'git cherry-pick' example</p>
+      <pre><code itemprop="duringMedia" class="code-block">git cherry-pick e1537be</code></pre>
+      <p>
+        <strong itemprop="name">'git cherry-pick'</strong> command in Git allows
+        you to select and apply a specific commit from one branch to another.
+      </p>
+
+      <h3>Cherry Pick Steps</h3>
+
+      <ol>
+        <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+          <span itemprop="name"
+            >Ensure you're on the branch where you want to apply the
+            cherry-picked commit (master in this case).</span
+          >
+          You can switch branches using the command:
+          <code itemprop="text">git checkout master</code>.
+        </li>
+        <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+          <span itemprop="name">Identify the commit to cherry-pick.</span>
+          You can find the commit hash using
+          <code itemprop="text">git log</code> or any Git visualization tool.
+        </li>
+        <li itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+          <span itemprop="name">Cherry pick the commit.</span>
+          Execute the cherry-pick command with the commit hash:
+          <code itemprop="text">git cherry-pick &lt;commit-hash&gt;</code>.
+        </li>
+      </ol>
+
+      <p>
+        Once the cherry-pick is completed, the selected changes from the
+          feature branch will be successfully applied to the master branch.
+      </p>
+    </main>
 
     <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
       <p itemprop="text">ads placeholder</p>
