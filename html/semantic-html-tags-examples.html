@@ -9,7 +9,7 @@
   <title>Semantic HTML Tags Examples</title>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
   <header>
     <nav>
       <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
@@ -23,49 +23,97 @@
         </li>
       </ul>
     </nav>
-    <h1>Semantic HTML tags examples</h1>
+    <h1 itemprop="headline">Semantic HTML tags examples</h1>
   </header>
-  <main>
-    <p>Semantic HTML tags provide meaning and structure to the content of a web page. Here are some examples of commonly used semantic HTML tags:</p>
+  <main itemprop="mainEntity" itemscope itemtype="https://schema.org/WebPageElement">
+    <p itemprop="text">Semantic HTML tags provide meaning and structure to the content of a web page. Here are some examples of commonly used semantic HTML tags:</p>
 
-    <p><strong>&lt;header&gt;</strong>: Represents the introductory or navigational section of a page.</p>
-  
-    <p><strong>&lt;nav&gt;</strong>: Defines a container for navigation links.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;header&gt;</h3>
+      <p itemprop="description">Represents the introductory or navigational section of a page.</p>
+    </section>
 
-    <p><strong>&lt;main&gt;</strong>: Represents the main content of a web page.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;nav&gt;</h3>
+      <p itemprop="description">Defines a container for navigation links.</p>
+    </section>
 
-    <p><strong>&lt;article&gt;</strong>: Represents a self-contained composition, such as a blog post or news article.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;main&gt;</h3>
+      <p itemprop="description">Represents the main content of a web page.</p>
+    </section>
 
-    <p><strong>&lt;section&gt;</strong>: Defines a thematic grouping of content within a document.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;article&gt;</h3>
+      <p itemprop="description">Represents a self-contained composition, such as a blog post or news article.</p>
+    </section>
 
-    <p><strong>&lt;aside&gt;</strong>: Represents content that is tangentially related to the main content, such as sidebars or callout boxes.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;section&gt;</h3>
+      <p itemprop="description">Defines a thematic grouping of content within a document.</p>
+    </section>
 
-    <p><strong>&lt;footer&gt;</strong>: Defines the footer section of a web page, usually containing information such as copyright notices or contact details.</p>
-  
-    <p><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong>: Heading tags used to define different levels of section headings. &lt;h1&gt; represents the highest level, while &lt;h6&gt; represents the lowest.</p>
-  
-    <p><strong>&lt;p&gt;</strong>: Defines a paragraph of text.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;aside&gt;</h3>
+      <p itemprop="description">Represents content that is tangentially related to the main content, such as sidebars or callout boxes.</p>
+    </section>
 
-    <p><strong>&lt;em&gt;</strong>: Indicates emphasized text.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;footer&gt;</h3>
+      <p itemprop="description">Defines the footer section of a web page, usually containing information such as copyright notices or contact details.</p>
+    </section>
 
-    <p><strong>&lt;strong&gt;</strong>: Represents strongly emphasized or important text.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;h1&gt; to &lt;h6&gt;</h3>
+      <p itemprop="description">Heading tags used to define different levels of section headings. &lt;h1&gt; represents the highest level, while &lt;h6&gt; represents the lowest.</p>
+    </section>
 
-    <p><strong>&lt;figure&gt;</strong> and <strong>&lt;figcaption&gt;</strong>:  Used to encapsulate and provide a caption for media content, such as images or videos.</p>
-    
-    <p><strong>&lt;blockquote&gt;</strong>: Represents a section that is quoted from another source.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;p&gt;</h3>
+      <p itemprop="description">Defines a paragraph of text.</p>
+    </section>
 
-    <p><strong>&lt;cite&gt;</strong>: Indicates a reference to a creative work, such as the title of a book or the name of an author.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;em&gt;</h3>
+      <p itemprop="description">Indicates emphasized text.</p>
+    </section>
 
-    <p><strong>&lt;time&gt;</strong>: Represents a specific date, time, or duration.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;strong&gt;</h3>
+      <p itemprop="description">Represents strongly emphasized or important text.</p>
+    </section>
 
-    <p>These are just a few examples of semantic HTML tags. By utilizing these tags appropriately, you can enhance the accessibility, search engine optimization, and overall structure of your web pages.</p>
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;figure&gt; and &lt;figcaption&gt;</h3>
+      <p itemprop="description">Used to encapsulate and provide a caption for media content, such as images or videos.</p>
+    </section>
+
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;blockquote&gt;</h3>
+      <p itemprop="description">Represents a section that is quoted from another source.</p>
+    </section>
+
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;cite&gt;</h3>
+      <p itemprop="description">Indicates a reference to a creative work, such as the title of a book or the name of an author.</p>
+    </section>
+
+    <section itemprop="hasPart" itemscope itemtype="https://schema.org/HowToSection">
+      <h3 itemprop="name">&lt;time&gt;</h3>
+      <p itemprop="description">Represents a specific date, time, or duration.</p>
+    </section>
+
+    <p itemprop="text">These are just a few examples of semantic HTML tags. By utilizing these tags appropriately, you can enhance the accessibility, search engine optimization, and overall structure of your web pages.</p>
   </main>
-  <aside>
-    <p>ads placeholder</p>
+  
+  <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
   </aside>
-  <footer>
+  <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
     <p><span class="copyright-symbol">©</span> simple-examples.com</p>
   </footer>
+
+  <script src=""></script>
 </body>
 
 </html>

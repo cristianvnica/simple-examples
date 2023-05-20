@@ -52,8 +52,8 @@
 
 <script src=""></script>
 
-<body>
-  <header>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader">
     <nav>
       <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -66,21 +66,21 @@
         </li>
       </ul>
     </nav>
-    <h1>HTML Page example</h1>
+    <h1 itemprop="headline">HTML Page example</h1>
   </header>
-  <main>
-    <p>Here is a simple HTML page example</p>
+  <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+    <p itemprop="description">Here is a simple HTML page example</p>
 
-    <section class="page">
-      <header>page title</header>
-      <main>main content</main>
-      <aside>side content</aside>
-      <footer>footer</footer>
+    <section class="page" itemscope itemtype="http://schema.org/WebPageElement">
+      <header itemprop="name">page title</header>
+      <main itemprop="mainContentOfPage">main content</main>
+      <aside itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">side content</aside>
+      <footer itemprop="hasPart" itemscope itemtype="http://schema.org/WPFooter">footer</footer>
     </section>
 </br>  
 <p>and the code needed to create a basic HTML document with a title, header, main content, side content, and footer. The page title appears in the browser's title bar and search engine results, and the header, main content, side content, and footer are defined using <a href="/html/semantic-html-tags-examples.html">semantic HTML tags.</a></p> 
 
-    <pre><code class="code-block">&lt;!DOCTYPE html&gt;
+    <pre itemprop="text"><code class="code-block">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;title&gt;Page title&lt;/title&gt;
@@ -103,12 +103,14 @@
 &lt;/html&gt;</code></pre>
  
 </main>
-  <aside>
-    <p>ads placeholder</p>
+  <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
   </aside>
-  <footer>
+  <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
     <p><span class="copyright-symbol">©</span> simple-examples.com</p>
   </footer>
+
+  <script src=""></script>
 </body>
 
 </html>

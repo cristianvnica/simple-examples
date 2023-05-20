@@ -5,27 +5,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="../favicon.png">
-  <title>Examples of using GIT commands</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>GIT Usage Examples</title>
+  <link rel="stylesheet" href="../style.css"> 
   <link rel="stylesheet" href="../index-style.css">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
   <header>
     <nav>
-      <a href="/">Simple Examples</a>
+      <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Simple Examples</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <h1>
-      Examples of using GIT commands
-    </h1>
-  
-    <nav>
-      <a href="/git/git-commands-examples.html">Essential Git Commands Examples</a>
-      <a href="/git/clean-untracked-files-example.html">Clean GIT untracked files</a>
+  <main itemprop="mainEntity" itemscope itemtype="https://schema.org/WebPageElement">  
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <header>
+        <h1 itemprop="name">GIT usage examples</h1>
+      </header>
+      <ul>
+          <li><a itemprop="url" href="/git/git-commands-examples.html">Essential Git Commands</a></li>
+          <li><a href="/git/clean-untracked-files-example.html">Clean GIT untracked files</a></li>
+      </ul>
     </nav>
+
+    <article itemscope itemtype="https://schema.org/Article">
+      <header>
+        <h2 itemprop="headline">What is Git?</h2>
+      </header>
+      <section itemprop="articleBody">
+        <p itemprop="text">Git is a version control system (VCS) used by developers to track changes in their code over time. It allows you to keep a record of every modification made to your project's files, making it easy to track and understand the history of your codebase.</p>
+        <p itemprop="text">With Git, you can create snapshots of your project at different points in time called "commits". Each commit represents a specific state of your code and includes information about the changes made. This enables you to compare versions, revert to previous states, and understand how your code evolves.</p>
+        <p itemprop="text">One of Git's notable features is its distributed nature. When you use Git, every developer working on a project has their own local copy of the entire repository. This means you can work offline, commit changes locally, and later synchronize your work with others when you're connected.</p>
+        <p itemprop="text">Git also excels at collaboration. It provides tools for sharing your code with others, merging changes from multiple contributors, and resolving conflicts that may arise when multiple people modify the same file. Git hosting platforms like GitHub, GitLab, and Bitbucket facilitate easy sharing and collaboration among team members.</p>
+        <p itemprop="text">Branching is another powerful aspect of Git. It allows you to create separate lines of development within your repository. You can create branches to work on new features, bug fixes, or experiments without affecting the main codebase. Git makes it simple to switch between branches, merge changes, and manage the different lines of development.</p>
+        <p itemprop="text">In summary, Git is a widely used version control system that helps developers track changes in their code, collaborate effectively, and manage project history.</p>
+      </article>
   </main>
+
+  <aside itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
+  </aside>
+  <footer itemscope itemtype="https://schema.org/WPFooter">
+    <p itemprop="copyrightYear"><span class="copyright-symbol">©</span> simple-examples.com</p>
+  </footer>
+  <script src=""></script>
 </body>
 
 </html>

@@ -5,30 +5,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="../favicon.png">
-  <title>Simple HTML examples</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>HTML examples</title>
+  <link rel="stylesheet" href="../style.css"> 
   <link rel="stylesheet" href="../index-style.css">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
   <header>
     <nav>
-      <a href="/">Simple Examples</a>
+      <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Simple Examples</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <h1>
-      Simple HTML examples
-    </h1>
-  
-    <nav>
-      <a href="/html/index-html-example.html">Index.html</a>
-      <a href="/html/document-example.html">HTML Document</a>
-      <a href="/html/html-page-example.html">HTML page</a>
-      <a href="/html/semantic-html-elements-examples.html">Semantic HTML elements</a>
-      <a href="/html/semantic-html-tags-examples.html">Semantic HTML tags</a>
+  <main itemprop="mainEntity" itemscope itemtype="https://schema.org/WebPageElement">  
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <header>
+        <h1 itemprop="name">HTML examples</h1>
+      </header>
+      <ul>
+          <li><a itemprop="url" href="/html/index-html-example.html">Index.html</a></li>
+          <li><a itemprop="url" href="/html/document-example.html">HTML Document</a></li>
+          <li><a itemprop="url" href="/html/html-page-example.html">HTML page</a></li>
+          <li><a itemprop="url" href="/html/semantic-html-elements-examples.html">Semantic HTML elements</a></li>
+          <li><a itemprop="url" href="/html/semantic-html-tags-examples.html">Semantic HTML tags</a></li>
+      </ul>
     </nav>
+
+    <article itemscope itemtype="https://schema.org/Article">
+      <h2 itemprop="headline">What is HTML?</h2>
+      <p itemprop="text">HTML stands for HyperText Markup Language. It is the standard markup language used for creating and structuring the content of web pages and applications. HTML uses a set of markup tags to define the structure and presentation of the content within a document.</p>
+      <p itemprop="text">HTML documents consist of elements, which are represented by tags. Tags are enclosed in angle brackets, such as `&lt;tag&gt;`. The opening tag denotes the start of an element, and the closing tag denotes the end. Some tags, called empty or self-closing tags, do not require a closing tag.</p>
+      <p itemprop="text">HTML allows you to define various types of content, such as headings, paragraphs, lists, links, images, tables, forms, and more. It also provides semantic tags that convey the meaning and structure of the content, making it more accessible to users and search engines.</p>
+      <p itemprop="text">Web browsers interpret HTML documents and render them as web pages, displaying the content according to the defined structure and applying any specified styles or formatting through CSS (Cascading Style Sheets).</p>
+      <p itemprop="text">HTML is a foundational technology for web development and is often used in conjunction with CSS for styling and JavaScript for dynamic functionality, creating interactive and engaging web experiences.</p>
+    </article>
   </main>
+
+  <aside itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
+  </aside>
+  <footer itemscope itemtype="https://schema.org/WPFooter">
+    <p itemprop="copyrightYear"><span class="copyright-symbol">©</span> simple-examples.com</p>
+  </footer>
+  <script src=""></script>
 </body>
 
 </html>

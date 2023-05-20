@@ -5,20 +5,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.png">
+  <meta name="description" content="A resource site providing simple examples">
+  <meta name="keywords" content="Examples, Simple Examples">
+  
   <title>Simple-Examples.com</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./index-style.css">
+  <style>
+    header nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: large;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      grid-column: 1/4;
+    }
+    main h1 {
+      margin-top: 14vh;
+      text-align: center;
+    }
+    main nav {
+      margin-top: 5vh;
+      text-align: center;
+    }
+    main nav a {
+      font-size: large;
+      color: black;
+      display: block;
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    main nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body>
-  <main>
-    <h1>
+<body itemscope itemtype="https://schema.org/WebPage">
+  <main itemprop="mainContentOfPage">
+    <h1 itemprop="headline">
       Simple examples
     </h1>
   
-    <nav>
-      <a href="/git">GIT</a>
-      <a href="/html">HTML</a>
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <a itemprop="url" href="/git">GIT</a>
+      <a itemprop="url" href="/html">HTML</a>
     </nav>
   </main>
 </body>

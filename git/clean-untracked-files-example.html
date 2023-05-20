@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope itemtype="https://schema.org/WebPageElement">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../favicon.png">
-  <title>Cleaning Git Untracked Files Example</title>
+  <title itemprop="name">Cleaning Git Untracked Files Example</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
+<body itemscope itemtype="https://schema.org/WebPage">
+  <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader">
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
       <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a itemprop="item" href="/"><span itemprop="name">Simple Examples</span></a>
@@ -22,38 +21,32 @@
         </li>
       </ul>
     </nav>
-    <h1>Cleaning Git Untracked Files Example</h1>
+    <h1 itemprop="headline">Cleaning Git Untracked Files Example</h1>
   </header>
 
-  <!-- Main content -->
-  <main>
-    <p>Let's assume you have a Git repository with the following structure:</p>
+  <main itemprop="mainEntity" itemscope itemtype="https://schema.org/Article">
+    <p itemprop="description">Let's assume you have a Git repository with the following structure:</p>
     <pre>my-repo/
   .git/
   file1.txt
   file2.txt
 untracked-file.txt</pre>
-    <p>In this example, <code>file1.txt</code> and <code>file2.txt</code> are tracked files, while <code>untracked-file.txt</code> is an untracked file. To delete the untracked file, follow these steps:</p>
+    <p itemprop="text">In this example, <code>file1.txt</code> and <code>file2.txt</code> are tracked files, while <code>untracked-file.txt</code> is an untracked file. To delete the untracked file, follow these steps:</p>
     <ol>
       <li>Open the terminal and navigate to the <code>my-repo</code> directory: <code>cd path/to/my-repo</code></li>
       <li>Run <code>git status</code> to see the current status of your repository</li>
       <li>Preview which untracked files will be removed with the <code>git clean -n</code> command</li>
       <li>If you're satisfied with the list of untracked files to be removed, proceed with the actual deletion by running: <code>git clean -f</code></li>
     </ol>
-    <p>Now, the untracked file <code>untracked-file.txt</code> has been removed from your repository. Remember to use <code>git clean</code> with caution, as it permanently deletes untracked files.</p>
+    <p itemprop="text">Now, the untracked file <code>untracked-file.txt</code> has been removed from your repository. Remember to use <code>git clean</code> with caution, as it permanently deletes untracked files.</p>
   </main>
 
-  <!-- Aside (ad placeholder) -->
-  <aside>
-    <p>ads placeholder</p>
+  <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
   </aside>
-
-  <!-- Footer -->
-  <footer>
+  <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
     <p><span class="copyright-symbol">©</span> simple-examples.com</p>
   </footer>
-
-  <!-- JavaScript files -->
   <script src=""></script>
 </body>
 </html>

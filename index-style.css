@@ -1,29 +1,32 @@
-header nav a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: large;
-}
-header nav a:hover {
-  text-decoration: underline;
-}
-main {
-  grid-column: 1/4;
+main header {
+  margin: 0;
+  padding: 0;
 }
 main h1 {
-  margin-top: 14vh;
-  text-align: center;
+  margin: 2rem;
+  color: #382f2f;
+  padding: 0;
+  font-size: xx-large;
 }
-main nav {
-  margin-top: 5vh;
-  text-align: center;
+main h2 {
+  margin-bottom: 0.5rem;
+  color:  #4a4343;
 }
-main nav a {
+main nav li {
   font-size: large;
-  color: black;
-  display: block;
-  margin-top: 1rem;
+  margin-right: 1rem;
+  list-style-type: none;
+}
+main header nav a {
   text-decoration: none;
 }
 main nav a:hover {
   text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+@media only screen and (min-width: 420px) {
+  main nav li {
+    display: inline-block;
+  }
 }

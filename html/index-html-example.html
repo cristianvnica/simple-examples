@@ -51,7 +51,7 @@
   </style>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
   <header>
     <nav>
       <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumbs">
@@ -65,12 +65,12 @@
         </li>
       </ul>
     </nav>
-    <h1>Index.html example</h1>
+    <h1 itemprop="headline">Index.html example</h1>
   </header>
-  <main>
+  <main itemprop="mainEntity" itemscope itemtype="https://schema.org/WebPageElement">
     <p>Here is a simple Index.html example.</p>
 
-    <pre><code class="code-block">&lt;!DOCTYPE html&gt;
+    <pre><code class="code-block" itemprop="text">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;title&gt;Page title&lt;/title&gt;
@@ -109,10 +109,10 @@
 </br>
   </main>
 
-  <aside>
-    <p>ads placeholder</p>
+  <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
   </aside>
-  <footer>
+  <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
     <p><span class="copyright-symbol">©</span> simple-examples.com</p>
   </footer>
 
