@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head itemscope itemtype="https://schema.org/WebPageElement">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.png" />
+    <title itemprop="name">Git Rebase Example</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body itemscope itemtype="https://schema.org/WebPage">
+    <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader">
+      <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <ul
+          itemscope
+          itemtype="https://schema.org/BreadcrumbList"
+          class="breadcrumbs"
+        >
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <a itemprop="item" href="/"
+              ><span itemprop="name">Simple Examples</span></a
+            >
+            <meta itemprop="position" content="1" />
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <a itemprop="item" href="/git"><span itemprop="name">GIT</span></a>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ul>
+      </nav>
+      <h1 itemprop="headline">Git Rebase Example</h1>
+    </header>
+
+    <main itemscope itemtype="https://schema.org/HowTo">
+      <p>Here is a simple example on how to perform <strong>'git rebase'</strong></p>
+      <pre><code itemprop="duringMedia" class="code-block">git rebase --pull origin master</code></pre>
+      <p>
+        <strong itemprop="name">'git rebase --pull origin master'</strong> fetches the latest changes from the origin repository's master branch and then rebases the current branch on top of those changes. This helps to incorporate the latest changes from origin/master into the current branch with a linear commit history.
+      </p>
+    </main>
+
+    <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+      <p itemprop="text">ads placeholder</p>
+    </aside>
+    <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+      <p><span class="copyright-symbol">©</span> simple-examples.com</p>
+    </footer>
+    <script src=""></script>
+  </body>
+</html>
