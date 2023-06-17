@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.png" />
+    <title>Git Stash Example</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="breadcrumbs">
+          <li><a href="/">Simple Examples</a></li>
+          <li><a href="/git">GIT</a></li>
+        </ul>
+      </nav>
+      <h1>Git Stash Example</h1>
+    </header>
+  
+    <main>
+      <p>Let's say you did some work, and you want to save it, so you can work on something else. Than in your terminal you can:</p>
+<pre><code class="code-block">git stash save "my work in progress message"</code></pre>
+
+      <p>Than work on something else, and reaply your changes with</p>
+
+<pre><code class="code-block">git stash apply</code></pre>
+      <p>
+        when you're ready to continue.
+      </p>
+
+      <p>You can browse your recent stash list with</p>
+<pre><code class="code-block">git stash list</code></pre>
+      <p>and apply an older stash by mentioning its number in the apply command:</p>
+      <pre><code class="code-block">git stash apply [number]</code></pre>
+    </main>
+    
+  </body>
+</html>
