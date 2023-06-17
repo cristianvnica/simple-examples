@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../favicon.png" />
     <title>Git Stash Example</title>
+    <meta name="description" content="This page shows a simple example of how to use the git stash command.">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "HowTo",
+        title: "Git Stash Example",
+        description: "This page shows a simple example of how to use the git stash command.",
+        steps: [
+          {
+            "name": "Stash your changes",
+            "action": "git stash save \"my work in progress message\"",
+          },
+          {
+            "name": "Work on something else",
+            "action": "git stash apply",
+          },
+          {
+            "name": "Browse your recent stash list",
+            "action": "git stash list",
+          },
+          {
+            "name": "Apply an older stash",
+            "action": "git stash apply [number]",
+          },
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
@@ -35,5 +62,12 @@
       <pre><code class="code-block">git stash apply [number]</code></pre>
     </main>
     
+    <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+      <p itemprop="text">ads placeholder</p>
+    </aside>
+    <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+      <p><span class="copyright-symbol">©</span> simple-examples.com</p>
+    </footer>
+    <script src=""></script>
   </body>
 </html>
