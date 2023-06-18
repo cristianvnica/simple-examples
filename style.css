@@ -24,10 +24,15 @@ header h1 {
 
 main {
   background-color: #ffffff;
-  color: #311c1c;
+  color: #061004;
   border-radius: 0.1rem;
   height: fit-content;
   font-size: large;
+}
+
+main::first-letter {
+  font-size: larger;
+  color: #1f5215;
 }
 
 main h2 {
@@ -60,8 +65,8 @@ ul {
 
 pre {
   font-family: 'Consolas', 'Courier New', monospace;
-  background-color: #383333;
-  color: #64ed68d1;
+  background-color: #262277;
+  color: #2fe509;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 1em;
@@ -96,7 +101,7 @@ aside {
 footer {
   margin-top: 2rem;
   text-align: center;
-  color: #9bffdbc7;
+  color: #9bffdb;
 }
 
 footer p {
@@ -126,7 +131,7 @@ footer p {
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #dbe3d3;
+  color: #e3e7de;
 }
 
 .breadcrumbs a:hover {
