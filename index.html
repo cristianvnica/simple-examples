@@ -20,7 +20,7 @@
       text-decoration: underline;
     }
     main {
-      grid-column: 1/4;
+      grid-column: 1/3;
       height: auto;
     }
     main::first-letter {
@@ -46,6 +46,12 @@
     main nav a:hover {
       text-decoration: underline;
     }
+    footer p, footer a {
+      display: inline;
+      color: #ebebeb;
+      font-size: small;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -61,6 +67,14 @@
       <strong><a itemprop="url" href="/html">HTML</a></strong>
     </nav>
   </main>
+
+  <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPAdBlock">
+    <p itemprop="text">ads placeholder</p>
+  </aside>
+  <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+    <a href="/about.html">About</a>
+    <p> <span class="copyright-symbol">©</span> simple-examples.com</p>
+  </footer>
 <div class="sun"></div>
 </body>
 
