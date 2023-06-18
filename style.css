@@ -12,6 +12,17 @@ body {
   height: 100%;
 }
 
+.sun {
+  position: absolute;
+  top: -16px;
+  right: -18px;
+  background-color: #e7c631d6;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  box-shadow: 0px 0px 80px 30px #e6e731;
+}
+
 header, main, aside, footer {
   padding: 2rem;
 }
