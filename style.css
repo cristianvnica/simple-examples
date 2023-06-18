@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #4a4343;
+  background: linear-gradient(#7264e6, #a6e591);
   line-height: 1.5;
   height: 100%;
 }
@@ -32,7 +32,7 @@ main {
 
 main h2 {
   margin-top: 3rem;
-  color: #4a4343;
+  color: #4d4c57;
 }
 
 main h3 {
@@ -42,7 +42,7 @@ main h3 {
 
 main a {
   text-decoration: none;
-  color: #4a434394;
+  color: #8b62e9;
 }
 
 main a:hover {
@@ -86,7 +86,7 @@ code {
 }
 
 aside {
-  color: #b7b7b7;
+  color: #dbe3d9;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -96,7 +96,7 @@ aside {
 footer {
   margin-top: 2rem;
   text-align: center;
-  color: #ccc;
+  color: #9bffdbc7;
 }
 
 footer p {
@@ -126,7 +126,7 @@ footer p {
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #ccc;
+  color: #dbe3d3;
 }
 
 .breadcrumbs a:hover {
